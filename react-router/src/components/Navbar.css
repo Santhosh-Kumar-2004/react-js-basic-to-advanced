@@ -1,0 +1,126 @@
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);  /* Slight transparency */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .logo-link {
+    text-decoration: none;
+  }
+  
+  .logo-image {
+    width: 100px;
+  }
+  
+  .hamburger {
+    font-size: 2rem;
+    display: none; /* Hidden by default on desktop */
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    align-items: center;
+  }
+  
+  .nav-item:hover,
+  .nav-item.active {
+    background-color: #ffeb3b;
+    color: black;
+  }
+  
+  /* Dropdown Styles */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+  
+  .dropdown-menu .dropdown-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #ffeb3b;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Mobile Styles (Hamburger Menu) */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block; /* Display hamburger menu on smaller screens */
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8); /* Background for mobile menu */
+      width: 100%;
+      padding: 10px;
+      display: none; /* Hidden by default */
+    }
+  
+    .nav-links.active {
+      display: block; /* Show menu when active */
+    }
+  
+    .nav-item {
+      text-align: center;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .nav-item:last-child {
+      border-bottom: none;
+    }
+  
+    /* Dropdown Styles for Mobile */
+    .dropdown-menu {
+      display: block;
+      position: static;
+      width: 100%;
+    }
+  }
+  

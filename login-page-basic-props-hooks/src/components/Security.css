@@ -1,0 +1,137 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */
+  
+  /* Security Page Container */
+  .security-page {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .security-page:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Page Title */
+  .security-page h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Description */
+  .security-page p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  
+  /* Subheading for sections */
+  .security-page h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  /* Security Status Section */
+  .security-status {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Login/Logout Section */
+  .login-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Input Field */
+  .sec_input {
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 15%;
+    margin-top: 20px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .security-page {
+      padding: 20px;
+    }
+  
+    .security-page h1 {
+      font-size: 2rem;
+    }
+  
+    .security-page p {
+      font-size: 1rem;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,17 @@
+e is a synthetic event object provided by React that represents the event triggered by the user interaction. In this case, e represents the click event that happens when you click the button.
+
+In JavaScript, every time an event (such as a click, submit, keydown, etc.) happens in the browser, an event object is created and passed to the event handler function. The event object contains useful information about the event itself, like:
+
+Which element was clicked
+What type of event occurred (e.g., click, keypress, etc.)
+Any additional properties like the position of the mouse when clicked, key pressed, etc.
+Why is e used?
+The e (event) object is used to access and control certain behaviors related to the event that occurred. In the code you provided, e is used to call e.preventDefault().
+
+What is e.preventDefault()?
+The preventDefault() method is used to prevent the default behavior of the event. In this case, it is specifically used to stop the default behavior that happens when you click a button inside a form (which is a common scenario in React apps).
+
+For example:
+If your button is inside a <form>, clicking it would normally trigger a form submission (i.e., the page reloads or data is sent to the server).
+Calling e.preventDefault() prevents that behavior from happening.
+In your case, this is likely done to ensure that when you click the button, the page does not reload (which is the default behavior of a button inside a form). Instead, the click triggers your logic for updating the state (setCount).

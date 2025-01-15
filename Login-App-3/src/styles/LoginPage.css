@@ -1,0 +1,75 @@
+/* loginPage.css */
+
+/* Container that centers the login form */
+#login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fc;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for the login form */
+  #login-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Heading of the page */
+  #login-form h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Label for input fields */
+  .login-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  /* Styling for input fields */
+  .login-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Styling for the submit button */
+  #login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #login-button:hover {
+    background-color: #45a049;
+  }
+  
+  #login-button:active {
+    background-color: #388e3c;
+  }
+  
+  /* Styling for the form container */
+  #login-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  

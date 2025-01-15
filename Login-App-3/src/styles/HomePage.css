@@ -1,0 +1,54 @@
+/* homePage.css */
+
+/* Home Page Container */
+.home-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Counter Section */
+  .counter-section {
+    margin-top: 50px;
+  }
+  
+  .counter-section h1 {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  /* Counter Buttons */
+  .counter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .counter-btn1 {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .counter-btn1:hover {
+    background-color: #b10101;
+  }
+  
+  .counter-btn1:active {
+    transform: scale(0.95);
+  }
+  
+  /* Avoid affecting global styles or Navbar */
+  .home-container,
+  .counter-section,
+  .counter-buttons {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  

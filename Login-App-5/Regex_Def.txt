@@ -1,0 +1,47 @@
+
+Beginner-Friendly Definition of Regular Expression (Regex):
+
+A regular expression (regex) is a pattern or rule that helps you search, match, or validate text. Think of it like a "template" for finding specific words, numbers, or patterns in a block of text.
+
+For example:
+- You want to check if a text looks like an email.
+- You want to find all phone numbers in a document.
+- You want to check if a password meets certain rules, like containing numbers and letters.
+
+A regex is simply a set of rules written in a special way that lets you do these tasks quickly.
+
+---
+
+Example of Regex in Plain English:
+Imagine you have a rule: 
+- "Find any word that starts with a capital letter."
+
+In regex, this rule looks like:
+[A-Z][a-z]+
+
+---
+
+A Basic Example in Code:
+Task: Check if a string contains only digits.
+
+Here’s how it works:
+
+```javascript
+const regex = /^\d+$/;
+
+const validInput = "12345";
+const invalidInput = "123a45";
+
+console.log(regex.test(validInput)); // Output: true (It's all numbers)
+console.log(regex.test(invalidInput)); // Output: false (It has letters)
+```
+
+Explanation:
+- `^`: The start of the text.
+- `\d`: Matches any single digit (0–9).
+- `+`: Matches one or more of the preceding character (digits in this case).
+- `$`: The end of the text.
+
+This regex ensures the entire input is only digits.
+
+---

@@ -1,0 +1,15 @@
+In React.js, the command:
+npm run build
+
+
+does the following:
+
+🌟 What it does:
+It creates an optimized production build of your React app.
+The output is placed in the build/ folder.
+All JavaScript, CSS, HTML, and static assets (like images) are minified and bundled for better performance.
+React uses webpack and Babel under the hood to do this.
+🚀 Why it's used:
+Deployment: The build/ folder contains everything needed to deploy your app to a web server or hosting platform (like Vercel, Netlify, GitHub Pages, etc.).
+Optimization: It ensures your app runs faster by minimizing file sizes and optimizing asset loading.
+Static site: The output is just static files (HTML, CSS, JS), meaning you don't need a Node.js server to run it — a simple web server can host it.

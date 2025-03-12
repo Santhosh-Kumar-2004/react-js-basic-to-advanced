@@ -1,0 +1,28 @@
+ENUM :-
+	An enum (short for enumeration) is a special data type used to define a set of named constant values. It’s often used when you have a fixed set of related options or categories, making your code more readable and organized.
+
+	Let’s break it down simply:
+
+Why use enums?
+	They help you avoid using arbitrary numbers or strings in your code, giving clear names to specific values.
+
+How does it work?
+	Each value in an enum has a name and a corresponding value (usually integers starting from 0, but you can customize this).
+
+
+In Python:
+
+from enum import Enum
+
+class Day(Enum):
+    SUNDAY = 1
+    MONDAY = 2
+    TUESDAY = 3
+    WEDNESDAY = 4
+    THURSDAY = 5
+    FRIDAY = 6
+    SATURDAY = 7
+
+print(Day.SUNDAY)       # Day.SUNDAY
+print(Day.SUNDAY.name)  # SUNDAY
+print(Day.SUNDAY.value) # 1
